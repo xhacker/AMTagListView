@@ -60,6 +60,12 @@
     _tapHandler = tapHandler;
 }
 
+#pragma mark - Layout
+
+- (CGSize)intrinsicContentSize {
+    return self.contentSize;
+}
+
 #pragma mark - Tag insertion
 
 - (void)addTag:(NSString *)text {
